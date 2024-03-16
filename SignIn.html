@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | E-commerce</title>
+    <!-- link to external css file  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link  bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <!-- Link to font awesome library for icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- icon of  the web site-->
+    <link
+      rel="shortcut icon"
+      href="./Assets/images/shopify.svg"
+      type="image/x-icon"
+    />
+    <!-- link to aos for animation css on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form id="loginForm" onsubmit="return validateLogin()">
+      <a href="./Home.html" id="backtohome"
+        ><i class="fa-solid fa-arrow-left"></i
+      ></a>
+      <div class="center">
+        <h1>Login</h1>
+        <br />
+        <p>Enter Login details to get access</p>
+      </div>
+      <div class="mb-3" id="email">
+        <label for="exampleInputEmail" class="form-label">Email Address</label>
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="form-control"
+          id="exampleInputEmail"
+          aria-describedby="emailHelp"
+        />
+        <br />
+      </div>
+      <div id="emailError" style="color: tomato; display: none">
+        Invalid email address
+      </div>
+      <div class="mb-3" id="pass">
+        <label for="exampleInputPassword" class="form-label">Password</label>
+        <input
+          type="password"
+          placeholder="password"
+          class="form-control"
+          id="exampleInputPassword"
+        />
+        <br />
+      </div>
+      <div id="passwordError" style="color: tomato; display: none">
+        Invalid Password
+      </div>
+      <div class="mb-3 form-check" id="rememberMe">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Keep Me Logged In</label
+        >
+      </div>
+      <div class="ending">
+        <p>Dont have an account? <a href="./SignUp.html"> Sign Up</a> here</p>
+        <button type="submit" class="btn">Login</button>
+      </div>
+    </form>
+  </body>
+</html>
